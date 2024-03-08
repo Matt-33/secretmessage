@@ -61,28 +61,28 @@ button:hover {
 #secret-message {
     font-size: 20px;
     margin-top: 20px;
-    position: relative; /* Permet d'utiliser les propriétés de positionnement */
-    animation: slideAndBounce 1.3s ease forwards; /* Animation pour le déplacement et le rebondissement */
-    opacity: 0; /* Début de l'animation avec une opacité à 0 */
+    position: relative;
+    animation: slideAndBounce 1.3s ease forwards; 
+    opacity: 0; 
     border-radius: 8px;
 }
 
 @keyframes slideAndBounce {
     0% {
-        left: -100%; /* Départ de la gauche de l'écran */
+        left: -100%; 
         opacity: 0;
     }
     50% {
-        left: 50%; /* Milieu de l'écran */
+        left: 50%; 
         opacity: 1;
     }
     100% {
-        left: 0; /* Position finale au centre */
+        left: 0;
         opacity:1;
     }
 }
 
-/* Style pour le bouton "Create your secret message" */
+/* Style bouton "Create your secret message" */
 #create-message-button {
     margin-top: 20px;
 }
