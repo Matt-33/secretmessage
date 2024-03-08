@@ -17,6 +17,11 @@ secretForm.addEventListener('submit', function(event) {
 
 copyButton.addEventListener('click', function() {
     shareUrlInput.select();
-    document.execCommand('copy');
-    alert('URL copied to clipboard!');
+    navigator.clipboard.writeText(shareUrlInput.value)
+        .then(() => {
+            alert('URL copied to clipboard!');
+        })
+        .catch((error) => {
+            console.error('Failed to copy URL: ', error);
+        });
 });
