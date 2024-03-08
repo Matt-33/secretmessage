@@ -1,0 +1,88 @@
+body{
+    font-family: "Madimi One", sans-serif;
+    text-align: center;
+    color:white;
+    background-color: bisque;
+}
+
+.container {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 300px 0;
+    background-color: black;
+    border-radius: 5rem;
+}
+
+/* Style pour les étiquettes */
+label {
+    font-weight: bold;
+}
+
+/* Style pour les boutons */
+button {
+    padding: 10px 20px;
+    background-color: bisque;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: "Madimi One", sans-serif;
+}
+
+button:hover {
+    background-color: white;
+    color:black;
+}
+
+/* Style pour les liens partagés */
+#share-link {
+    margin-top: 20px;
+}
+
+#share-url {
+    max-width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    color:black;
+    font-family: "Madimi One", sans-serif;
+}
+
+#copy-button {
+    background-color: bisque;
+}
+
+#copy-button:hover {
+    background-color: white;
+    color:black;
+}
+
+/* Style pour le message secret */
+#secret-message {
+    font-size: 20px;
+    margin-top: 20px;
+    position: relative; /* Permet d'utiliser les propriétés de positionnement */
+    animation: slideAndBounce 1.3s ease forwards; /* Animation pour le déplacement et le rebondissement */
+    opacity: 0; /* Début de l'animation avec une opacité à 0 */
+    border-radius: 8px;
+}
+
+@keyframes slideAndBounce {
+    0% {
+        left: -100%; /* Départ de la gauche de l'écran */
+        opacity: 0;
+    }
+    50% {
+        left: 50%; /* Milieu de l'écran */
+        opacity: 1;
+    }
+    100% {
+        left: 0; /* Position finale au centre */
+        opacity:1;
+    }
+}
+
+/* Style pour le bouton "Create your secret message" */
+#create-message-button {
+    margin-top: 20px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message Sharing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form id="secret-form">
+            <label for="secret-message">Enter your secret message:</label><br>
+            <input type="text" id="secret-message" name="secret-message"><br>
+            <button type="submit">Create</button>
+        </form>
+
+    <div id="share-link" style="display:none;">
+        <p>Share this link:</p>
+        <input type="text" id="share-url" readonly>
+        <button id="copy-button">Copy</button>
+    </div>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
